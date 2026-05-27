@@ -1,0 +1,269 @@
+/* ==========================================================================
+   RESET & ESTILOS GENERALES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+
+    /* Fondo degradado suave */
+   background-color: #ffd6e0;
+
+    color: #000000;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGACIÓN
+   ========================================================================== */
+.site-header {
+
+    /* Degradado elegante */
+    background: linear-gradient(135deg, #0f3460, #16213e);
+
+    color: #f5f7fa;
+    text-align: center;
+    padding: 2.5rem 1rem;
+
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.site-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.site-header p {
+    color: #8fd6ff;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   MENÚ
+   ========================================================================== */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    padding: 10px 18px;
+    border-radius: 30px;
+
+    background-color: rgba(255,255,255,0.15);
+
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+
+    background-color: #black;
+
+    color: #1a1a2e;
+
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE CONTENIDO
+   ========================================================================== */
+.recipe-container {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.recipe-section {
+    padding: 1rem 0;
+}
+
+.recipe-section h2 {
+
+    color: #16213e;
+    font-size: 2rem;
+
+    border-left: 6px solid #4cc9f0;
+
+    padding-left: 12px;
+    margin-bottom: 1.5rem;
+
+    text-transform: uppercase;
+
+    background-color: rgba(76,201,240,0.1);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 6px;
+}
+
+/* ==========================================================================
+   TARJETAS DE RECETAS
+   ========================================================================== */
+.recipe-card {
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 2rem;
+
+    box-shadow: 0 6px 20px rgba(15, 52, 96, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card h3 {
+
+    color: #2563eb;
+
+    font-size: 2rem;
+
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+}
+
+/* ==========================================================================
+   IMÁGENES
+   ========================================================================== */
+.recipe-media img {
+
+    width: 100%;
+
+    max-height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 1.5rem;
+
+    border: 4px solid #90e0ef;
+}
+
+/* ==========================================================================
+   VIDEO
+   ========================================================================== */
+.recipe-video {
+
+    margin-top: 2rem;
+
+    background: linear-gradient(to right, #dff6ff, #caf0f8);
+
+    padding: 1.5rem;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #4cc9f0;
+}
+
+.recipe-video h4 {
+
+    margin-bottom: 1rem;
+
+    color: #0f3460;
+
+    font-size: 1.2rem;
+}
+
+.recipe-video iframe {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+
+    border-radius: 8px;
+
+    border: none;
+}
+
+/* ==========================================================================
+   TEXTOS E INGREDIENTES
+   ========================================================================== */
+.recipe-info h4 {
+
+    color: #0f3460;
+
+    margin: 1.5rem 0 0.5rem 0;
+
+    font-size: 1.3rem;
+}
+
+.recipe-info ul,
+.recipe-info ol {
+
+    padding-left: 1.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.recipe-info li {
+
+    margin-bottom: 0.7rem;
+
+    background-color: rgba(76,201,240,0.08);
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+}
+
+/* ==========================================================================
+   DIVISOR
+   ========================================================================== */
+.divider {
+
+    border: 0;
+
+    height: 3px;
+
+    background: linear-gradient(to right, transparent, #4cc9f0, transparent);
+
+    margin: 3rem 0;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+
+    background: linear-gradient(135deg, #16213e, #0f3460);
+
+    color: #dff6ff;
+
+    text-align: center;
+
+    padding: 2rem;
+
+    font-size: 1rem;
+
+    margin-top: 4rem;
+
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.25);
+}
